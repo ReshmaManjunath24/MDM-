@@ -1,0 +1,15 @@
+managed implementation in class zbp_cds_stor_locat unique;
+strict ( 2 );
+
+define behavior for ZCDS_STOR_LOCAT //alias <alias_name>
+persistent table ztab_stor_locat
+lock master
+authorization master ( instance )
+etag master material
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly ) material;
+  field (readonly : update)plant, storagelocation;
+}

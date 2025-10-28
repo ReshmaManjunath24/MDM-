@@ -1,0 +1,18 @@
+managed implementation in class zbp_cds_rule_engine unique;
+strict;
+
+define behavior for ZCDS_RULE_ENGINE
+persistent table ztab_rule_engine
+lock master
+authorization master ( instance )
+//etag master <field_name>
+
+late numbering
+{
+  create ( authorization : global );
+  update;
+  delete;
+field (readonly )rule_id;
+
+
+}

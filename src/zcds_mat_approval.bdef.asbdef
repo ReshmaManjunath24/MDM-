@@ -1,0 +1,32 @@
+managed implementation in class zbp_cds_mat_approval unique;
+strict;
+
+define behavior for ZCDS_MAT_APPROVAL //alias <alias_name>
+persistent table ztab_approval
+lock master
+authorization master ( instance )
+//etag master <field_name>
+late numbering
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly ) ApproverId;
+
+
+
+  mapping for ztab_approval
+
+    {
+      ApproverID     = approverid;
+      Process        = process;
+      Plant          = plant;
+      IndustrySector = IndustrySector;
+      MaterialType   = materialtype;
+      Approver1      = approver1;
+      Approver2      = approver2;
+      Approver3      = approver3;
+      Approver4      = approver4;
+      ApproverDepartment = department;
+    }
+}

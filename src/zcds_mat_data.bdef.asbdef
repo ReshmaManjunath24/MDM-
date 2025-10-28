@@ -1,0 +1,17 @@
+managed implementation in class zbp_cds_mat_data unique;
+////strict ( 2 );
+
+define behavior for ZCDS_MAT_DATA //alias <alias_name>
+persistent table ztab_mat_data
+lock master
+//authorization master ( instance )
+//etag master material
+
+{
+  create ;
+  update;
+  delete;
+
+  field ( numbering : managed) material;
+  field (readonly : update ) material,salesorg,division,distributionchannel;
+}

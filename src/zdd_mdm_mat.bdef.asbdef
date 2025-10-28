@@ -1,0 +1,17 @@
+managed implementation in class zbp_dd_mdm_mat unique;
+//strict ( 2 );
+
+define behavior for ZDD_MDM_MAT //alias <alias_name>
+persistent table ztab_mdm_mat
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  create ;
+  update;
+  delete;
+  field ( numbering : managed ) material;
+  field (readonly : update ) plant, stge_type ,
+ warehouse_number;
+
+}

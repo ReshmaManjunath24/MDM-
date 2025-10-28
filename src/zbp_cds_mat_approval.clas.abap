@@ -1,0 +1,5 @@
+CLASS zbp_cds_mat_approval DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zcds_mat_approval.
+ENDCLASS.
+
+CLASS zbp_cds_mat_approval IMPLEMENTATION.
+ENDCLASS.

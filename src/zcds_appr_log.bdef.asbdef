@@ -1,0 +1,29 @@
+managed implementation in class zbp_cds_appr_log unique;
+strict ( 2 );
+
+define behavior for ZCDS_APPR_LOG //alias <alias_name>
+persistent table ztab_appr_log
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly ) Material;
+
+  mapping for ztab_appr_log
+  {
+
+   Material = material ;
+  ApproverId = approverid;
+    ApprovarName = Approvarname;
+    ApproverLevel = approverlevel;
+    CreatedOn = createdon;
+    CreatedBy =  createdby;
+    Status = status;
+    Comments = comments;
+    ApproverDepartment = department;
+  }
+
+  }

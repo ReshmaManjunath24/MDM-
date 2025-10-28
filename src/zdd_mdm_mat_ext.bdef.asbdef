@@ -1,0 +1,14 @@
+managed implementation in class zbp_dd_mdm_mat_ext unique;
+//strict ( 2 );
+
+define behavior for ZDD_MDM_MAT_EXT //alias <alias_name>
+persistent table ztab_mdm_mat_ext
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  create ;
+  update;
+  delete;
+  field (readonly : update ) Material, Plant;
+}

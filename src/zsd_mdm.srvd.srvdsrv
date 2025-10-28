@@ -1,0 +1,9 @@
+@EndUserText.label: 'Material Data Management'
+define service ZSD_MDM {
+  expose ZCDS_MAT_DATA;
+  expose ZCDS_STOR_LOCAT;
+  expose ZCDS_PURC_DATA;
+  expose ZCDS_RULE_ENGINE;
+  expose ZCDS_MAT_APPROVAL;
+  expose ZCDS_APPR_LOG;
+}

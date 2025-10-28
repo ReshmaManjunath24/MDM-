@@ -1,0 +1,15 @@
+managed implementation in class zbp_cds_purc_data unique;
+strict ( 2 );
+
+define behavior for ZCDS_PURC_DATA //alias <alias_name>
+persistent table ztab_purc_data
+lock master
+authorization master ( instance )
+etag master material
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly ) material;
+  field (readonly : update)purchasinggroup, purchaseorderquantityunit;
+}

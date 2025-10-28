@@ -1,0 +1,5 @@
+CLASS zbp_cds_rule_engine DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zcds_rule_engine.
+ENDCLASS.
+
+CLASS zbp_cds_rule_engine IMPLEMENTATION.
+ENDCLASS.

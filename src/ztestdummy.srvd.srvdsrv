@@ -1,0 +1,5 @@
+@EndUserText.label: 'test'
+define service Ztestdummy {
+  expose ZDD_MDM_MAT;
+  expose ZDD_MDM_MAT_EXT;
+}
